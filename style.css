@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+}
+
+.app-container {
+  width: 650px;
+  margin: 10px auto;
+  background-color: #1f2937;
+  border-radius: 15px;
+  height: 769px;
+}
+
+.heading-container {
+  background-color: #3a69d2;
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+header p {
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.service-type {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f5f5f5;
+}
+
+.services-list {
+  position: relative;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 300;
+  position: absolute;
+  right: -400px;
+}
+
+.services-container {
+  border-bottom: 1px solid #c3c6db;
+  padding-top: 0;
+}
+
+.send-invoice {
+  text-align: center;
+  padding: 45px;
+}
+
+.btn-price {
+  padding: 9px 13px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  height: 45px;
+}
+
+.btn-invoice {
+  width: 473px;
+  height: 44px;
+  background-color: #3a69d2;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.task,
+.total {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.notes {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.total-price {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.total-container {
+  padding-bottom: 0;
+}
+
+.remove {
+  font-size: 12px;
+  margin-left: 20px;
+  color: red;
+}
+
+.remove:hover {
+  cursor: pointer;
+}
+
+.send-invoice {
+  padding-top: 0;
+}
+
+.summary-container,
+.label-container {
+  padding-bottom: 0;
+}
+
+.dollar-sign {
+  color: #918e9b;
+  font-weight: 300;
+}

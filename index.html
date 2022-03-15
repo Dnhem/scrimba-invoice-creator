@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Invoice Creator</title>
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <div class="heading-container">
+        <h1>
+          Invoice Creator
+        </h1>
+        <p>Thanks for choosing GoodCorp, LLC!</p>
+      </div>
+    </header>
+
+    <div class="btn-container container">
+      <button class="btn btn-price" id="wash-car">Wash Car: $10</button>
+      <button class="btn btn-price" id="mow-lawn">Mow Lawn: $20</button>
+      <button class="btn btn-price" id="pull-weeds">Pull Weeds: $30</button>
+    </div>
+
+    <div class="label-container container">
+        <p class="task">Task</p>
+        <p class="total">Total</p>
+    </div>
+
+    <div class="services-container container">
+      <div class="services-list"></div>
+    </div>
+
+    <div class="summary-container container">
+      <p class="notes">NOTES</p>
+      <p class="total">TOTAL AMOUNT</p>
+    </div>
+
+    <div class="total-container container">
+      <p class="notes">We accept cash, credit card, or PayPal</p>
+      <p class="total-price"></p>
+    </div>
+    
+    <div class="send-invoice">
+      <button class="btn btn-invoice">Send Invoice</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
