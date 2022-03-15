@@ -63,7 +63,11 @@ servicesList.addEventListener("click", e => {
 });
 
 invoiceBtn.addEventListener("click", e => {
-  servicesList.remove();
-  totalPrice.remove();
+  const serviceType = document.querySelectorAll(".service-type");
+  for (let type of serviceType) {
+    type.remove();
+  }
+  total = 0;
+  totalPrice.textContent = "";
   existingServices = [];
 });
