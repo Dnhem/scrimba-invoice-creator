@@ -12,7 +12,6 @@ const invoiceBtn = document.querySelector(".btn-invoice");
 
 for (let btn of serviceBtns) {
   btn.addEventListener("click", () => {
-    console.log(btn.id);
     if (!existingServices.includes(btn.id)) {
       // Only gets called if node id is pushed into existingServices list
       existingServices.push(btn.id);
@@ -49,17 +48,14 @@ const addServiceToTable = serviceID => {
 
 // Remove service from DOM and existingServices array
 servicesList.addEventListener("click", e => {
-  let target = e.target;
-  if (target.matches("span")) {
-    let serviceType = document.querySelector(".service-type");
-    console.log(serviceType);
-    serviceType.remove();
-    existingServices.splice(existingServices.indexOf(serviceType.id), 1);
-    if (serviceType.id === "wash-car") total -= 10;
-    else if (serviceType.id === "mow-lawn") total -= 20;
-    else if (serviceType.id === "pull-weeds") total -= 30;
-    totalPrice.textContent = `$${total}`;
-  }
+  let parent = e.target.parentElement;
+  console.log(parent);
+  parent.remove();
+  existingServices.splice(existingServices.indexOf(parent.id), 1);
+  if (parent.id === "wash-car") total -= 10;
+  else if (parent.id === "mow-lawn") total -= 20;
+  else if (parent.id === "pull-weeds") total -= 30;
+  totalPrice.textContent = `$${total}`;
 });
 
 invoiceBtn.addEventListener("click", e => {

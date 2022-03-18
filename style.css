@@ -25,10 +25,21 @@ body {
 h1 {
   font-size: 40px;
   font-weight: 800;
+  margin-top: -35px;
+  color: #474343;
+}
+
+.heading-container {
+  background-image: url('bart.jpeg');
+  background-size: cover;
+  padding-top: 45px;
 }
 
 header p {
   font-size: 16px;
+  margin-top: 80px;
+  color: #474343;
+  letter-spacing: 10px;
 }
 
 .container {
@@ -70,15 +81,17 @@ header p {
   font-size: 14px;
   font-weight: 500;
   height: 45px;
+  color: #474343;
+  background-color: pink;
 }
 
 .btn-invoice {
   width: 473px;
   height: 44px;
-  background-color: #3a69d2;
+  background-color: pink;
   font-size: 16px;
-  font-weight: 500;
-  color: #fff;
+  font-weight: 700;
+  color: #474343;
   border-radius: 15px;
 }
 
