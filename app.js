@@ -9,6 +9,7 @@ const price = document.querySelector(".price");
 const servicesList = document.querySelector(".services-list");
 const totalPrice = document.querySelector(".total-price");
 const invoiceBtn = document.querySelector(".btn-invoice");
+const serviceType = document.querySelector(".service-type");
 
 for (let btn of serviceBtns) {
   btn.addEventListener("click", () => {
@@ -48,9 +49,10 @@ const addServiceToTable = serviceID => {
 
 // Remove service from DOM and existingServices array
 servicesList.addEventListener("click", e => {
+  if (e.target.tagName === "SPAN") {
+    e.target.parentElement.remove();
+  }
   let parent = e.target.parentElement;
-  console.log(parent);
-  parent.remove();
   existingServices.splice(existingServices.indexOf(parent.id), 1);
   if (parent.id === "wash-car") total -= 10;
   else if (parent.id === "mow-lawn") total -= 20;
