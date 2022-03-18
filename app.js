@@ -9,7 +9,6 @@ const price = document.querySelector(".price");
 const servicesList = document.querySelector(".services-list");
 const totalPrice = document.querySelector(".total-price");
 const invoiceBtn = document.querySelector(".btn-invoice");
-const serviceType = document.querySelector(".service-type");
 
 for (let btn of serviceBtns) {
   btn.addEventListener("click", () => {
